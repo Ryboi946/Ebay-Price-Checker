@@ -15,9 +15,9 @@ import time
 
 #Getting environmental variables from .env
 load_dotenv()
-API_Key = "RyanCurr-EPN-PRD-2ee6b197e-a4f41278"
-user = "alert.notification10@gmail.com"
-password = "getdpenbwpockapk"
+API_Key = os.getenv('EBAY_API_KEY')
+user = os.getenv('user')
+password = os.getenv('password')
 
 
 #Ebay Price Checker - actual class that communicates with the Ebay API to get products/prices
